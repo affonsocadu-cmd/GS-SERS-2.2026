@@ -28,11 +28,11 @@ O usuário pergunta em linguagem normal e o assistente responde com base nos cá
 - informar limitações e fontes em toda resposta;
 - recalcular se o usuário mudar a tarifa, o HSP, as horas por noite ou os anos (exemplo: `tarifa 0,78 hsp 4,5 anos 15`).
 
-> **[INSERIR PRINT 1]** Terminal com o assistente respondendo "como iluminar a praça gastando menos?".
+>  Terminal com o assistente respondendo "como iluminar a praça gastando menos?".
 >
 > ![Print do assistente 1](docs/img/print_assistente_1.png)
 
-> **[INSERIR PRINT 2]** Terminal com o assistente respondendo "qual o tamanho do painel solar?" e a pergunta com mudança de valores (ex.: `tarifa 0,78938`).
+> Terminal com o assistente respondendo "qual o tamanho do painel solar?" e a pergunta com mudança de valores (ex.: `tarifa 0,78938`).
 >
 > ![Print do assistente 2](docs/img/print_assistente_2.png)
 
@@ -116,7 +116,7 @@ Cada dado tem um tipo: **Datasheet** (ficha do fabricante), **Orçamento** (pre�
 
 Não colocamos a perda por temperatura separada, porque o manual trata a temperatura pela tensão do módulo e não como fator de energia.
 
-> **[INSERIR PRINT 3]** Página da Enel SP com a tabela de tarifas da REH 3.596/2026, mostrando a linha "Iluminação Pública (B4b)".
+>  Página da Enel SP com a tabela de tarifas da REH 3.596/2026, mostrando a linha "Iluminação Pública (B4b)".
 >
 > ![Tarifa Enel SP](docs/img/print_enel_tarifa.png)
 
@@ -130,7 +130,7 @@ Comparação para um ponto de luz, 10 horas por noite, 10 anos (tarifa B4b sem t
 | LED | R$ 350 | R$ 89 | R$ 1.241 | 2,1 anos | 19 kg |
 | LED + solar (2 painéis, 3 baterias) | R$ 4.350 | R$ 60 | R$ 7.020 | 21,8 anos | 25 kg |
 
-> **[INSERIR PRINT 4]** Terminal com o resultado de `python calculos.py`.
+> Terminal com o resultado de `python calculos.py`.
 >
 > ![Comparação](docs/img/print_comparacao.png)
 
@@ -208,15 +208,7 @@ O conjunto de referência (100 Wp e 384 Wh) não aguenta a luminária de 40 W po
 | Investimento | 2 × (350 + 380) + 3 × 690 + 820 | **R$ 4.350** |
 | Troca das baterias (ano 8) | 3 × 690 | R$ 2.070 |
 
-## 12. Testes com usuários
-
-Os registros dos testes e dos ajustes estão em [`docs/testes_usuarios.md`](docs/testes_usuarios.md). Não guardamos dados pessoais, só um código e o perfil geral de cada pessoa.
-
-> **[INSERIR PRINT 5, se quiserem]** Print de uma conversa de teste (sem nome ou dado pessoal) ou do formulário usado.
->
-> ![Teste com usuário](docs/img/print_teste.png)
-
-## 13. Referências
+## 12. Referências
 
 Data de consulta das páginas: 13/11/2026.
 
@@ -230,6 +222,6 @@ Data de consulta das páginas: 13/11/2026.
 8. Chalfin, A. et al. Reducing crime through environmental design: evidence from a randomized experiment of street lighting in New York City. Journal of Quantitative Criminology, 2022.
 9. Datasheets e orçamentos da seção 11.
 
-## 14. Uso de IA generativa
+## 13. Uso de IA generativa
 
 Usamos uma IA generativa (Claude) como apoio para organizar o código e os textos e para conferir contas. A tarifa foi conferida na página oficial da Enel SP e os fatores do manual do CRESESB foram conferidos no PDF do manual. O HSP e o fator de emissão não conseguimos confirmar direto nas fontes (SunData e planilha do MCTI), por isso estão marcados como estimados. Os cálculos foram testados rodando o código e as perguntas dos testes com usuários.
